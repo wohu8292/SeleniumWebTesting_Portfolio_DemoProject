@@ -1,51 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-21T11:45:30 MDT" name="Default suite" finished-at="2024-03-21T11:45:54 MDT" duration-ms="24598">
+  <suite started-at="2024-03-21T12:59:03 MDT" name="Default suite" finished-at="2024-03-21T12:59:10 MDT" duration-ms="7051">
     <groups>
     </groups>
-    <test started-at="2024-03-21T11:45:30 MDT" name="Default test" finished-at="2024-03-21T11:45:54 MDT" duration-ms="24598">
-      <class name="tests.TestPractice">
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:tests.TestPractice@6f8f9349]" started-at="2024-03-21T11:45:30 MDT" name="landingPage" finished-at="2024-03-21T11:45:37 MDT" duration-ms="6452" status="PASS">
+    <test started-at="2024-03-21T12:59:03 MDT" name="Default test" finished-at="2024-03-21T12:59:10 MDT" duration-ms="7051">
+      <class name="tests.ErrorValidation">
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:tests.ErrorValidation@56bca85b]" started-at="2024-03-21T12:59:03 MDT" name="landingPage" finished-at="2024-03-21T12:59:09 MDT" duration-ms="6095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- landingPage -->
-        <test-method signature="practiceTest(java.util.HashMap)[pri:0, instance:tests.TestPractice@6f8f9349]" started-at="2024-03-21T11:45:37 MDT" name="practiceTest" data-provider="getData" finished-at="2024-03-21T11:45:43 MDT" duration-ms="5932" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Iamking@000, email=anshika@gmail.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="errorValid()[pri:0, instance:tests.ErrorValidation@56bca85b]" started-at="2024-03-21T12:59:09 MDT" name="errorValid" finished-at="2024-03-21T12:59:10 MDT" duration-ms="750" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- practiceTest -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:tests.TestPractice@6f8f9349]" started-at="2024-03-21T11:45:43 MDT" name="closePage" finished-at="2024-03-21T11:45:43 MDT" duration-ms="125" status="PASS">
+        </test-method> <!-- errorValid -->
+        <test-method is-config="true" signature="closePage()[pri:0, instance:tests.ErrorValidation@56bca85b]" started-at="2024-03-21T12:59:10 MDT" name="closePage" finished-at="2024-03-21T12:59:10 MDT" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePage -->
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:tests.TestPractice@6f8f9349]" started-at="2024-03-21T11:45:43 MDT" name="landingPage" finished-at="2024-03-21T11:45:48 MDT" duration-ms="5036" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landingPage -->
-        <test-method signature="practiceTest(java.util.HashMap)[pri:0, instance:tests.TestPractice@6f8f9349]" started-at="2024-03-21T11:45:48 MDT" name="practiceTest" data-provider="getData" finished-at="2024-03-21T11:45:54 MDT" duration-ms="6324" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Iamking@000, email=anshika@gmail.com, productName=IPHONE 13 PRO}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- practiceTest -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:tests.TestPractice@6f8f9349]" started-at="2024-03-21T11:45:54 MDT" name="closePage" finished-at="2024-03-21T11:45:54 MDT" duration-ms="155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePage -->
-      </class> <!-- tests.TestPractice -->
+      </class> <!-- tests.ErrorValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

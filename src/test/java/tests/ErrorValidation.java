@@ -9,7 +9,7 @@ public class ErrorValidation extends BaseTest{
 	
 	@Test
 	public void errorValid() {
-		loginpage.logIn("gjdndruf1222@gmail.com", "GJdndruf123456");
+		loginpage.logIn("anshika@gmail.com", "Iamking@123");
 		Assert.assertEquals(loginpage.getErrorMessage(), "Incorrect email or password.");
 	}
 }

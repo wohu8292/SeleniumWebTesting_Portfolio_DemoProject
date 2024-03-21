@@ -7,7 +7,7 @@
 
 * [Base File (Starting Point)](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/testComponents/BaseTest.java)
 
-  * This is the starting point point of automation. driver and browser type is initialized in this file. This will be run automatically before each test method execution because I put testNG annotation (@BeforeMethod(alwaysRun=true)).
+  * This is the starting point point of automation. Method for driver and browser type initialization is defined here and will be run automatically before each test method execution because I put testNG annotation (@BeforeMethod(alwaysRun=true)).
     
   * createed method for test data interpretation (JSON->String->JavaObject) and screenshot here for convenience because testing file is inheriting it. 
   

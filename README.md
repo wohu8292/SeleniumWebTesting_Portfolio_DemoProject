@@ -4,36 +4,26 @@
 ### 1.Regression Test for product purchasing process
 
 #### Code
-* [Test file](https://github.com/wohu8292/PlaywrightWebTesting_Portfolio_DemoProject/blob/master/tests/E2E.spec.js)
 
-* [Page object files](https://github.com/wohu8292/PlaywrightWebTesting_Portfolio_DemoProject/tree/master/pageObjects)
-  
-* [Class that manage all the page object file](https://github.com/wohu8292/PlaywrightWebTesting_Portfolio_DemoProject/blob/master/pageObjects/POManager.js)
-  
-* [JSON test Data](https://github.com/wohu8292/PlaywrightWebTesting_Portfolio_DemoProject/blob/master/testData/example_Data.json)
-  
---------------
+* [Base File (Starting Point)](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/testComponents/BaseTest.java)
 
-### 2.Regression Test for product purchasing process in cucumber framework
+* [Regression Test](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/tests/TestPractice.java)
 
-#### Code
-* [Feature file](https://github.com/wohu8292/PlaywrightWebTesting_Portfolio_DemoProject/blob/master/features/Ecommerce.feature)
-
-* [Step Definition File](https://github.com/wohu8292/PlaywrightWebTesting_Portfolio_DemoProject/blob/master/features/step/StepDefinition.js)
+* [Negative Test (input invalid credential)](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/tests/ErrorValidation.java)
   
-* [Hook](https://github.com/wohu8292/PlaywrightWebTesting_Portfolio_DemoProject/blob/master/features/hooks/hook.js)
+* [Page Objects](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/tree/main/src/main/java/pageObjects)
+  
+* [Utility (Commonly used method for every classes](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/main/java/abstractComponents/Utility.java)
+
+* [etc (Data file, Property, Report...](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/tree/main/src/main/java/resources)
+  
+
 
 --------------
 
-### 3.What I've learned
+### 2.What I've learned
 
-* [What I've learned](https://github.com/wohu8292/Playwright_Learning)
+* [What I've learned](https://github.com/wohu8292/SeleniumWebTesting_Learning)
 
---------------
 
-### 4.etc
 
-#### Code
-* [Handling child window and UI components](https://github.com/wohu8292/PlaywrightWebTesting_Portfolio_DemoProject/blob/master/tests/HandlingUIComponent.spec.js)
-
-* [Screenshot and Visual Testing](https://github.com/wohu8292/PlaywrightWebTesting_Portfolio_DemoProject/blob/master/tests/Visual_Testing.spec.js)

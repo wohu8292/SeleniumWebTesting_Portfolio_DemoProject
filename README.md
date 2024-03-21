@@ -25,7 +25,7 @@
   
 * [Utility](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/main/java/abstractComponents/Utility.java)
 
-  * Commonly used methods such as explicit wait or navigation link
+  * Commonly used methods by page object classes such as explicit wait or navigation link
 
 * [etc (Data file, Property, Report...](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/tree/main/src/main/java/resources)
   

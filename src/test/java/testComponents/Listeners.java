@@ -17,30 +17,31 @@ public class Listeners extends BaseTest implements ITestListener{
 
 	ExtentTest test;
 	ExtentReports extent = ExtentReporterNG.getExtentReport();
+	ThreadLocal <ExtentTest>extentTest = new ThreadLocal();
 	
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		test = extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);	//unique threadID
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		test.log(Status.PASS, "TestPassed");
+		extentTest.get().log(Status.PASS, "TestPassed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());
 		
 		// driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver")
 					.get(result.getInstance());
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
 		
@@ -54,7 +55,7 @@ public class Listeners extends BaseTest implements ITestListener{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+		extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
 	}
 
 	@Override

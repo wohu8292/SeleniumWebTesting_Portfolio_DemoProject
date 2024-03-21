@@ -6,7 +6,7 @@
       <class name="tests.TestPractice">
         <methods>
           <include name="closePage"/>
-          <include name="practiceTest" invocation-numbers="1"/>
+          <include name="practiceTest" invocation-numbers="0 1"/>
           <include name="landingPage"/>
         </methods>
       </class> <!-- tests.TestPractice -->

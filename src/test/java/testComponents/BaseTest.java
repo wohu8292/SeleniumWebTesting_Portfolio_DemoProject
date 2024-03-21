@@ -10,10 +10,13 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -32,20 +35,24 @@ public class BaseTest {
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream("C:/Users/gjdnd/Desktop/selenium/Selenium/src/main/java/resources/browser.properties");
 		prop.load(fis);
-		String brow = prop.getProperty("browser");
+		
+		String brow = System.getProperty("browser")!=null ? System.getProperty("browser"): prop.getProperty("browser");
 		
 		if(brow.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver","C:/Users/gjdnd/Documents/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-		
+		else if(brow.equalsIgnoreCase("edge")) {
+			System.setProperty("webdriver.edge.driver", "edge.exe");
+			driver = new EdgeDriver();
+		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
 		return driver;
 	}
 	
 	public List<HashMap<String, String>> interpreteData() throws IOException {
-		String jsonContent = FileUtils.readFileToString(new File("C:/Users/gjdnd/Desktop/selenium/seleniumPractice/src/main/java/Resources/data.json"), StandardCharsets.UTF_8);
+		String jsonContent = FileUtils.readFileToString(new File("C:/Users/gjdnd/Desktop/selenium/Selenium/src/main/java/resources/data.json"), StandardCharsets.UTF_8);
 		ObjectMapper mapper = new ObjectMapper();
 		List<HashMap<String,String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String,String>>>(){});
 		return data;

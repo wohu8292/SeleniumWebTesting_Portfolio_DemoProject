@@ -30,10 +30,13 @@ public class CheckoutPage extends Utility{
 		Actions a = new Actions(driver);
 		a.sendKeys(country_text, countryName).build().perform();
 		selectCountry.click();
+		waitForWebElementToAppear(place_order_btn);
+
 	}
 	
 	public ConfirmationPage goToConfirmationPage() {
-		place_order_btn.click();
+		Actions a = new Actions(driver);
+		a.moveToElement(place_order_btn).click().build().perform();
 		ConfirmationPage confirmationpage = new ConfirmationPage(driver);
 		return confirmationpage;
 	}

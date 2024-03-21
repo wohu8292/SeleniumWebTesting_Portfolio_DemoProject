@@ -25,6 +25,9 @@ public class LoginPage extends Utility{
 	@FindBy(css="#login")
 	WebElement login_btn;
 	
+	@FindBy(css="[class*='flyInOut']")
+	WebElement errorMessage;
+	
 	public ProductCatalogue logIn(String takenEmail, String takenPassword) {
 		email.sendKeys(takenEmail);
 		password.sendKeys(takenPassword);
@@ -37,4 +40,8 @@ public class LoginPage extends Utility{
 		driver.get("https://rahulshettyacademy.com/client");
 	}
 	
+	public String getErrorMessage() {
+		waitForWebElementToAppear(errorMessage);
+		return errorMessage.getText();
+	}
 }

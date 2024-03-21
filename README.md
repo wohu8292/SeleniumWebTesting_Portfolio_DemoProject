@@ -6,7 +6,11 @@
 #### Code
 
 * [Base File (Starting Point)](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/testComponents/BaseTest.java)
-  *this is 
+
+  * this is the starting point point of automation. driver and browser type is initialized in this file. This will be run automatically before each test method execution because I put testNG annotation (@BeforeMethod(alwaysRun=true)).
+    
+  * I create method 
+  
 * [Regression Test](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/tests/TestPractice.java)
 
 * [Negative Test (input invalid credential)](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/tests/ErrorValidation.java)

@@ -9,29 +9,29 @@
 
   * This is the starting point point of automation. driver and browser type is initialized in this file. This will be run automatically before each test method execution because I put testNG annotation (@BeforeMethod(alwaysRun=true)).
     
-  * I createed method for test data interpretation (JSON->String->JavaObject) and screenshot here for convenience because testing file is inheriting it. 
+  * createed method for test data interpretation (JSON->String->JavaObject) and screenshot here for convenience because testing file is inheriting it. 
   
 * [Regression Test](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/tests/TestPractice.java)
 
- * Regression test for the process from login to checkout with assertion.
+  * Regression test for the process from login to checkout with assertion.
 
 * [Negative Test](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/tests/ErrorValidation.java)
 
- * Negative test for login page that input invalid credential.
+  * Negative test for login page that input invalid credential.
   
 * [Page Objects](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/tree/main/src/main/java/pageObjects)
 
- * Page Objects to seperate selectors and layouts from test performing.
+  * Page Objects to seperate selectors and layouts from test performing.
   
 * [Utility](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/main/java/abstractComponents/Utility.java)
 
- * Commonly used methods such as explicit wait or navigation link
+  * Commonly used methods such as explicit wait or navigation link
 
 * [etc (Data file, Property, Report...](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/tree/main/src/main/java/resources)
   
- * I initialized browser type in a key-value form in the property file.
- * extent report
- * JSON data file
+  * I initialized browser type in a key-value form in the property file.
+  * extent report
+  * JSON data file
 
 --------------
 

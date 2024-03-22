@@ -39,5 +39,6 @@
 
 * [What I've learned](https://github.com/wohu8292/SeleniumWebTesting_Learning)
 
+* [Handling Dropdown, Checkbox](https://github.com/wohu8292/SeleniumWebTesting_Portfolio_DemoProject/blob/main/src/test/java/tests/UI_components.java)
 
 

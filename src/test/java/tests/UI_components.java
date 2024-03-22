@@ -23,8 +23,6 @@ public class UI_components {
 			//GoToExpediaWebsite
 			driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 			
-			//Calendar
-			
 			//SelectCheckbox
 			WebElement checkbox = driver.findElement(By.cssSelector("#ctl00_mainContent_chk_StudentDiscount"));
 			checkbox.click();
